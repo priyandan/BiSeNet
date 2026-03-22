@@ -1,6 +1,6 @@
 
 cfg = dict(
-    model_type='bisenetv1',
+    model_type='bisenetv2',
     n_cats=20,
     num_aux_heads=2,
     lr_start=1e-2,
@@ -8,9 +8,9 @@ cfg = dict(
     warmup_iters=1000,
     max_iter=80000,
     dataset='CustomerDataset',
-    im_root='./datasets/cityscapes',
-    train_im_anns='./datasets/cityscapes/train.txt',
-    val_im_anns='./datasets/cityscapes/val.txt',
+    im_root='/content/drive/MyDrive/advanced_ai_research/task_1/sydneyscapes/leftImg8bit',
+    train_im_anns='/content/drive/MyDrive/advanced_ai_research/task_1/sydneyscapes/train_bisenet.txt',
+    val_im_anns='/content/drive/MyDrive/advanced_ai_research/task_1/sydneyscapes/val_bisenet.txt',
     scales=[0.75, 2.],
     cropsize=[512, 512],
     eval_crop=[512, 512],
